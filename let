@@ -1,0 +1,21 @@
+def cheсk(a):
+    try:
+        int(a)
+        return True
+    except ValueError:
+        return False
+
+while True:
+    h = input()
+    if not cheсk(h) == True:
+        print("Enter integer!")
+    else:
+        lattice = 0
+        height = int(h)
+        if (height <= 23) and (height > 0):
+            for i in range(height):
+                height = height - 1
+                lattice = lattice + 1
+                print(' ' * height, '#' * lattice, '#', sep='')
+        else:
+            print('vvedite znachenie ot 0 do 23')
