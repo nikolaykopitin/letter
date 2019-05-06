@@ -4,7 +4,6 @@ def cheсk(a):
         return True
     except ValueError:
         return False
-
 while True:
     h = input()
     if not cheсk(h) == True:
